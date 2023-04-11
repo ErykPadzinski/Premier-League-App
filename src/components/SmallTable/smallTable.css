@@ -1,0 +1,30 @@
+.smallTable {
+  background-color: rgba(245, 245, 245, 0.864);
+  width: 20rem;
+  height: fit-content;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  padding: 0.5rem;
+  font-weight: 400;
+  border-radius: 0.1rem;
+
+}
+
+.rank {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.rank-name {
+  display: flex;
+  gap: 0.6rem;
+  margin: 0.2rem;
+}
+
+.team-logo {
+  width: 1.8rem;
+  height: auto;
+}

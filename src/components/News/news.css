@@ -1,0 +1,25 @@
+.articles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.single-article {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(245, 245, 245, 0.864);
+  color: black;
+  width: 60rem;
+  height: auto;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.article-img {
+  width: 60rem;
+}
+
+
