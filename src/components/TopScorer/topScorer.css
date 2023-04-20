@@ -1,0 +1,33 @@
+.top-scorer {
+  background-color: rgba(245, 245, 245, 0.864);
+  width: 20rem;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 2px;
+}
+
+.top-scorer > h2 {
+  font-weight: 200;
+  margin: .1rem 0;
+}
+
+.scorer-info {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: .5rem;
+}
+
+.scorer-img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.scorer-team {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}

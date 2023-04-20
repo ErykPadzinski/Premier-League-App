@@ -1,4 +1,4 @@
-.smallTable {
+.small-table {
   background-color: rgba(245, 245, 245, 0.864);
   width: 20rem;
   height: fit-content;
@@ -7,7 +7,7 @@
   margin-top: 2rem;
   margin-left: 2rem;
   padding: 0.5rem;
-  font-weight: 400;
+  font-weight: 200;
   border-radius: 0.1rem;
 
 }
@@ -27,4 +27,8 @@
 .team-logo {
   width: 1.8rem;
   height: auto;
+}
+
+.scorer-img {
+  border-radius: 100px;
 }

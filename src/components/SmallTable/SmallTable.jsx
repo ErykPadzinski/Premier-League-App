@@ -3,7 +3,7 @@ import './smallTable.css'
 
 
 
-function SmallTable() {
+export default function SmallTable() {
   const [table, setTable] = useState([]);
 
   useEffect(() => {
@@ -12,8 +12,7 @@ function SmallTable() {
       "x-rapidapi-host": "v3.football.api-sports.io",
       "x-rapidapi-key": "7d77a6317f82edbc5eeae3f2aa41f87a"
     };
-
-    fetch(url, { headers })
+     fetch(url, { headers })
       .then(response => response.json())
       .then(data => {
         const tableData = data.response[0].league.standings[0].map(team => {
@@ -31,10 +30,9 @@ function SmallTable() {
       .catch(error => console.log(error));
   }, []);
 
-  const headers = ["Rank", "Name", "Points", "Goals For", "Goals Against"];
 
   return (
-    <div className="smallTable">
+    <div className="small-table">
     {table.slice(0, 10).map(team => (
       <div className="rank" key={team.rank} >
         <div className="rank-name">
@@ -53,7 +51,7 @@ function SmallTable() {
   );
 }
 
-export default SmallTable;
+
 
 
 

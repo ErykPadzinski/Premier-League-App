@@ -2,11 +2,14 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  scroll-behavior: smooth;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 .single-article {
   font-family: 'Montserrat', sans-serif;
-  background-color: rgba(245, 245, 245, 0.864);
+  background-color: rgba(245, 245, 245, 0.631);
   color: black;
   width: 60rem;
   height: auto;
@@ -15,6 +18,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+
 
 }
 
@@ -22,4 +27,10 @@
   width: 60rem;
 }
 
+.sources {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  gap: 30rem;
+}
 
