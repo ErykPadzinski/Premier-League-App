@@ -1,0 +1,39 @@
+.table {
+  border-collapse: collapse;
+  width: 80%;
+  background-color: rgba(245, 245, 245, 0.864);
+  font-family: 'Montserrat', sans-serif;
+  align-self: center;
+}
+
+.club-header {
+  width: 30%;
+}
+
+.row:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+
+
+.row {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.club-data {
+  display: flex;
+  align-items: center;
+}
+
+.team-logo {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.team-name {
+  font-weight: 200;
+}
+
+

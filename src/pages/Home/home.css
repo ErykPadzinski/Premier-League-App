@@ -1,3 +1,8 @@
+
+/* Big screen version */
+
+@media only screen and (min-width: 1441px) {
+
 .home-content {
   display: flex;
   gap: 6rem;
@@ -21,4 +26,36 @@
   top: 4rem;
   height: 100vh;
   overflow: hidden;
+}
+
+
+}
+
+/* Laptop screen version */
+
+@media only screen and (max-width: 1440px) {
+  .home-content {
+    display: flex;
+    gap: 6rem;
+  
+  }
+  
+  .home-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 4rem;
+    height: 100vh;
+  }
+  
+  .home-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 4rem;
+    height: 100vh;
+    overflow: hidden;
+  }
 }

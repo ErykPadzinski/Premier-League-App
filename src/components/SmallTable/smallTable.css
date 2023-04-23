@@ -1,3 +1,7 @@
+/* Big screen version */
+
+@media only screen and (min-width: 1441px) {
+
 .small-table {
   background-color: rgba(245, 245, 245, 0.864);
   width: 20rem;
@@ -31,4 +35,45 @@
 
 .scorer-img {
   border-radius: 100px;
+}
+
+}
+
+/* Laptop screen version */
+
+@media only screen and (max-width: 1440px) {
+  .small-table {
+    background-color: rgba(245, 245, 245, 0.864);
+    width: 18rem;
+    height: fit-content;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    font-weight: 200;
+    border-radius: 0.1rem;
+  
+  }
+  
+  .rank {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .rank-name {
+    display: flex;
+    gap: 0.6rem;
+    margin: 0.2rem;
+  }
+  
+  .team-logo {
+    width: 1.8rem;
+    height: auto;
+  }
+  
+  .scorer-img {
+    border-radius: 100px;
+  }
 }
