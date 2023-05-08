@@ -5,10 +5,17 @@ import './news.css'
 export default function News() {
 
   const [data, setData] = useState([]);
+
+  
+  const twoWeeksAgo = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000 );
+
+  const formattedDate = twoWeeksAgo.toISOString().split('T')[0];
+
+
   
   
   useEffect(() => {
-    fetch('https://newsapi.org/v2/everything?q=PremierLeague&from=2023-03-25&sortBy=publishedAt&language=en&apiKey=37c7650b964f487d9ff51e5e3b3eb831')
+    fetch(`https://newsapi.org/v2/everything?q=PremierLeague&from=${formattedDate}&sortBy=publishedAt&language=en&apiKey=37c7650b964f487d9ff51e5e3b3eb831`)
     .then(res => res.json())
     .then((data) => setData(data.articles))
     .then(console.log(data))

@@ -3,6 +3,8 @@ import './app.css'
 import { BrowserRouter as  Router, Routes, Route } from "react-router-dom";
 import Home from './pages/Home/Home';
 import Standings from './pages/Standings/Standings';
+import ClubDetails from './pages/clubDetails/clubDetails';
+
 function App() {
 
   const [tableData, setTableData] = useState([]);
@@ -20,6 +22,7 @@ function App() {
           return {
             rank: team.rank,
             name: team.team.name,
+            id: team.team.id,
             logo: team.team.logo,
             points: team.points,
             goalsFor: team.all.goals.for,
@@ -46,6 +49,7 @@ function App() {
   <Routes>
     <Route path="/" element={<Home tableData={tableData} />}/>
     <Route path='/standings' element={<Standings tableData={tableData} />}/>
+    <Route path='/club/:clubName' element={<ClubDetails />}/>
   </Routes>
 </Router>
   )

@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <div className='navbar'>
       <ul>
-        <li>Latest</li>
+        <li onClick={() => navigate('/')}>Latest</li>
         <li onClick={() => navigate('/standings')} >Standings</li>
         <li>Stats</li>
       </ul>

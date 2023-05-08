@@ -1,6 +1,8 @@
 .table {
   border-collapse: collapse;
-  width: 80%;
+  border-radius: 2px;
+  width: 80vw;
+  height: 80vh;
   background-color: rgba(245, 245, 245, 0.864);
   font-family: 'Montserrat', sans-serif;
   align-self: center;
@@ -14,11 +16,37 @@
   background-color: #f2f2f2;
 }
 
+.row:first-child {
+  background-color: rgba(135, 224, 108, 0.526);
+}
 
+.row:nth-child(2),
+.row:nth-child(3),
+.row:nth-child(4) {
+  background-color: rgba(103, 182, 239, 0.526);
+}
+
+.row:nth-child(5) {
+  background-color: rgba(233, 182, 115, 0.526);
+}
+
+.row:nth-child(18),
+.row:nth-child(19),
+.row:nth-child(20) {
+  background-color: rgba(203, 77, 77, 0.526);
+}
 
 .row {
-  border: 1px solid #ddd;
+  border: 1px solid rgba(245, 245, 245, 0.864);;
   text-align: center;
+}
+
+.row:hover {
+  background-color: rgb(52, 2, 51);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+
 }
 
 .club-data {
@@ -27,13 +55,20 @@
 }
 
 .team-logo {
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+  margin-left: .3rem;
+  margin-top: .2rem;
 }
 
 .team-name {
   font-weight: 200;
+}
+
+
+.points {
+  font-weight: bold;
 }
 
 

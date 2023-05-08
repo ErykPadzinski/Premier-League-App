@@ -38,13 +38,13 @@ li:hover {
 .navbar {
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 ul {
   display: flex;
   justify-content: space-around;
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.902);
   font-size: 2rem;
   list-style-type: none;
   font-family: 'Montserrat', sans-serif;
